@@ -1,4 +1,5 @@
 #== Start BashRC Functions ==#
+echo "Sourcing .bashrc_additions"
 
 function hr(){
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
@@ -11,8 +12,8 @@ sourceDB2_Profile() {
 }
 
 sourceScripts(){
-    source $HOME/bin/shell/checkpoints.sh
-    SCRIPTS_DIR=$HOME/functions
+    _DEBUG_FUNCTION_CALL sourceScripts
+    source $BASH_HOME/bin/shell/checkpoints.sh
     export ENV_FUNCTIONS=$SCRIPTS_DIR/.env_functions
     echo "Scripts : [$(show scripts | tr '\n' '\t')]"
     scripts
@@ -25,7 +26,7 @@ sourceScripts(){
     echo
     echo "Aliases : [$(type aliases)]"
     aliases
-    source $HOME/open-sourced/git/contrib/completion/git-completion.bash
+    source $BASH_HOME/open-sourced/git/contrib/completion/git-completion.bash
 }
 
 function _gitp4 () {
@@ -45,6 +46,7 @@ function _skrup() {
 
 #== Start BashRC Changs ==#
 #home-scripts | grep -v "/"
+sourceScripts
 
 #sourceScripts
 #sourceDB2_Profile

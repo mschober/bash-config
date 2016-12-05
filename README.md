@@ -17,3 +17,6 @@
 
 ### Submodules
 * [Submodules Using Git](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
+* [shell](bin/shell)
+* [bin](bin)
+* [functions](functions)

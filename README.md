@@ -14,3 +14,6 @@
 ### Bashrc
 * Sources all the functions into the environment based on $BASH_HOME/functions/*.func
 * Depends on root directory of $BASH_HOME
+
+### Submodules
+* [Submodules Using Git](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)

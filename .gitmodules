@@ -1,0 +1,9 @@
+[submodule "functions"]
+	path = functions
+	url = git@github.com:mschober/connectors.git
+[submodule "bin/shell"]
+	path = bin/shell
+	url = git@github.com:mschober/shell.git
+[submodule "bin"]
+	path = bin
+	url = git@github.com:mschober/bunch-of-scripts.git
